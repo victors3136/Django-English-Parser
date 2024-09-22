@@ -3,9 +3,13 @@ import pathlib
 BASE_DIR = pathlib.Path(__file__).resolve().parent.parent
 
 ALLOWED_HOSTS = []
+
 CORS_ALLOW_ALL_ORIGINS = True
+
 DEBUG = True
-SECRET_KEY='none'
+
+SECRET_KEY='none' # required for the server to run :)
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',

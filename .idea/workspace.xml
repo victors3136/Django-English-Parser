@@ -4,27 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8fed09b6-1a58-4295-8f5f-5dd5b7e8a405" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/nlpserv.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nlpapp/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nlpapp/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nlpapp/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nlpapp/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nlpapp/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nlpapp/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nlpapp/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nlpapp/views.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nlpserv/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nlpserv/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nlpserv/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nlpserv/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nlpserv/wsgi.py" afterDir="false" />
+    <list default="true" id="8fed09b6-1a58-4295-8f5f-5dd5b7e8a405" name="Changes" comment="Initial Commit&#10;&#10;Created a simple http server that parses English input&#10;using spacy and returns the types of part of speech that&#10;they represent">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;victors3136&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/victors3136/Django-English-Parser.git&quot;,
+    &quot;accountId&quot;: &quot;c4b85cc5-3525-499a-9e2e-7b40c947a476&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -53,23 +48,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;HTTP Request.All in generated-requests.executor&quot;: &quot;Run&quot;,
-    &quot;HTTP Request.generated-requests | POST request to /nlp/process-text/.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "HTTP Request.All in generated-requests.executor": "Run",
+    "HTTP Request.generated-requests | POST request to /nlp/process-text/.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/victo/Projects/nlpproject/English-Syntax-Highhlighter/server",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Django Server.nlpserv">
     <configuration name="All in generated-requests" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http">
       <method v="2" />
@@ -126,11 +123,25 @@
       <updated>1726938186900</updated>
       <workItem from="1726938187120" duration="6262000" />
       <workItem from="1726995058880" duration="5812000" />
-      <workItem from="1727013549862" duration="1980000" />
+      <workItem from="1727013549862" duration="2306000" />
+      <workItem from="1727025424935" duration="1976000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial Commit&#10;&#10;Created a simple http server that parses English input&#10;using spacy and returns the types of part of speech that&#10;they represent">
+      <option name="closed" value="true" />
+      <created>1727018858699</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1727018858699</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit&#10;&#10;Created a simple http server that parses English input&#10;using spacy and returns the types of part of speech that&#10;they represent" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit&#10;&#10;Created a simple http server that parses English input&#10;using spacy and returns the types of part of speech that&#10;they represent" />
   </component>
 </project>

@@ -1,0 +1,5 @@
+db.sqlite3
+/nlpserv/__pycache__/
+/nlpapp/__pycache__/
+/nlpapp/migrations/
+/venv/
